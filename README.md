@@ -1,2 +1,3 @@
 # register
-Static page for markup testing
+
+Страница для тестирования верстки
