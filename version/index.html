@@ -9,6 +9,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="../js/index.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -29,8 +30,8 @@
                             <a href="" class="brand"><img src="../images/header/header_logo.png"/></a>
                         </div>
                         <div class="col-md-9">
-                            <div>
-                                <div class="dropdown">
+                            <div class="row">
+                                <div class="dropdown col-md-1">
                                     <a href="" class="dropdown-toggle" data-toggle="dropdown">
                                         <span class="ic-flag ic-flag-ru"></span>
                                         Ru
@@ -50,6 +51,28 @@
                                         </a></li>
                                     </ul>
                                 </div>
+                                <ul class="nav nav-pills col-md-4">
+                                    <li><a href=""><i class="glyphicon glyphicon-home"></i> Главная</a></li>
+                                    <li><a href=""><i class="glyphicon glyphicon-envelope"></i> Контакты</a> </li>
+                                </ul>
+                                <form class="enter-form form-inline col-md-6">
+                                    <div class="form-group">
+                                        <label for="login">Логин:</label>
+                                        <input type="text" class="form-control" id="login" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Пароль:</label>
+                                        <input type="text" class="form-control" id="password" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Войти</button>
+                                    <div class="form-group">
+                                        <ul class="nav">
+                                            <li><a href="">Регистрация</a></li>
+                                            <li><a href="">Вспомнить пароль</a></li>
+                                        </ul>
+                                        <a href="" class="btn btn-info">с SSL</a>
+                                    </div>
+                                </form>
                             </div>
                             <ul class="nav nav-tabs">
                                 <li class="active"><a href="">Лидеры</a></li>
@@ -58,9 +81,172 @@
                                 <li><a href="">Форум</a></li>
                                 <li><a href="">Справка</a></li>
                             </ul>
+                            <form class="form-inline search-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control search-qery"
+                                           plaseholder="Поиск по тендерам"/>
+                                    <button type="submit" class="btn btn-primary">Найти</button>
+                                </div>
+                            </form>
                         </div>
 
                     </div>
+                </div>
+            </div>
+            <ul class="breadcrumb">
+                <li><a href="">TenderPro</a></li>
+                <li class="active">Регистрация. Шаг 1. Создайте учетную запись</li>
+            </ul>
+            <div class="panel panel-default main-content">
+                <div class="panel-heading">
+                    <h1 class="main-header">
+                        <i class="glyphicon glyphicon-file"></i>
+                        Регистрация. Шаг 1. Создайте учетную запись
+                        <a href="" class="btn btn-info btn-rnd pull-right"
+                           title="Справка"><i class="glyphicon glyphicon-question-sign"></i></a>
+                    </h1>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group clearfix bg-warning main-form-group">
+                            <label class="col-md-2 control-label">Логин:</label>
+                            <div class="col-md-6 input-group-sm">
+                                <input type="text" class="form-control"/>
+
+                            </div>
+                            <div class="col-md-1 btn-group-xs">
+                                <button type="button" class="btn btn-warning btn-rnd" data-toggle="tooltip"
+                                        data-placement="right"
+                                        title="Не менее пяти символов, допустимы только латинские буквы и цифры">
+                                    ?
+                                </button>
+                            </div>
+                            <div class="col-md-3 error-text">
+                                <small>не задано обязательное значение</small>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix main-form-group">
+                            <label class="col-md-2 control-label">E-mail:</label>
+                            <div class="col-md-6 input-group-sm">
+                                <input type="email" placeholder="name@company.ru" class="form-control"/>
+                            </div>
+                            <div class="col-md-1 btn-group-xs">
+                                <button type="button" class="btn btn-warning btn-rnd" data-toggle="tooltip"
+                                        data-placement="right"
+                                        title="На указанный e-mail будет выслано письмо с подтверждением">
+                                    ?
+                                </button>
+                            </div>
+                            <div class="col-md-3 error-text">
+                            </div>
+                        </div>
+                        <div class="form-group clearfix main-form-group">
+                            <label class="col-md-2 control-label">Язык:</label>
+                            <div class="col-md-6 input-group-sm">
+                                <select class="selectpicker form-control">
+                                    <option selected="selected">Русский(Russian)</option>
+                                    <option>English</option>
+                                </select>
+                            </div>
+                            <div class="col-md-1 btn-group-xs">
+                                <button type="button" class="btn btn-warning btn-rnd" data-toggle="tooltip"
+                                        data-placement="right"
+                                        title="Язык по умолчанию для вашей учетной записи">
+                                    ?
+                                </button>
+                            </div>
+                            <div class="col-md-3 error-text">
+                            </div>
+                        </div>
+                        <div class="form-group clearfix main-form-group">
+                            <label class="col-md-2 control-label">ФИО:</label>
+                            <div class="col-md-2 input-group-sm">
+                                <input type="text" class="form-control" placeholder="Фамилия"/>
+                            </div>
+                            <div class="col-md-2 input-group-sm">
+                                <input type="text" class="form-control" placeholder="Имя"/>
+                            </div>
+                            <div class="col-md-2 input-group-sm">
+                                <input type="text" class="form-control" placeholder="Отчество"/>
+                            </div>
+                            <div class="col-md-1 btn-group-xs">
+                                <button type="button" class="btn btn-warning btn-rnd" data-toggle="tooltip"
+                                        data-placement="right"
+                                        title="ФИО администратора учетной записи">
+                                    ?
+                                </button>
+                            </div>
+                            <div class="col-md-4 error-text">
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="col-md-2 control-label">Должность:</label>
+                            <div class="col-md-6 input-group-sm">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <div class="col-md-1 btn-group-xs">
+                                <button type="button" class="btn btn-warning btn-rnd" data-toggle="tooltip"
+                                        data-placement="right"
+                                        title="Должность или направление деятельности, например &quot;Экономист&quot; или &quot;Буровое и обогатительное оборудование&quot;">
+                                    ?
+                                </button>
+                            </div>
+                            <div class="col-md-4 error-text">
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="col-md-2 control-label">Департамент:</label>
+                            <div class="col-md-6 input-group-sm">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <div class="col-md-4 error-text col-md-offset-1">
+                            </div>
+                        </div>
+                        <div class="form-group clearfix main-form-group">
+                            <label class="col-md-2 control-label">Контактный телефон:</label>
+                            <div class="col-md-6 input-group-sm">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <div class="col-md-1 btn-group-xs">
+                                <button type="button" class="btn btn-warning btn-rnd" data-toggle="tooltip"
+                                        data-placement="right"
+                                        title="Номер телефона в федеральном формате, например +7-912-866-12-34 или +7(945) 123-45-56">
+                                    ?
+                                </button>
+                            </div>
+                            <div class="col-md-3 error-text">
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <div class="col-md-10 input-group-sm col-md-offset-2">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox"/>
+                                    Я ознакомлен и согласен с <a href="" target="_blank">Правилами работы в системе</a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="footnote clearfix">
+                            <small><span class="star">*</span> - Обязательные поля</small>
+                        </div>
+                        <div class="form-group clearfix">
+                            <div class="col-md-10 col-md-offset-2">
+                                <button type="submit" class="btn btn-default">
+                                    Далее<i class="glyphicon glyphicon-menu-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="well footer">
+                <div class="col-md-6 text-left copy-text">
+                    &copy; Tender.Pro 2002-2015<br/>
+                    E-mail: <a href="mailto:client@tender.pro">client@tender.pro</a>
+                    <a href="" target="_blank">Дизайн сайта: AltSolution</a>
+                </div>
+                <div class="col-md-6 text-right">
+                    <span class="browsers" title="Совместим с различными браузерами"></span>
+                    <a href=""><i class="glyphicon glyphicon-lock"></i>Безопасность</a>
                 </div>
             </div>
 
