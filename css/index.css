@@ -1,0 +1,36 @@
+*{
+    font: normal 12px Tahoma, Helvetica, sans-serif;
+}
+
+a{
+    color: #D90D15;
+}
+
+.container-fluid{
+    padding: 0 10px;
+}
+
+.alert{
+    margin-top: 5px;
+    border: 1px solid #FFFFFF;
+    padding: 0 8px;
+    height: 35px;
+    line-height: 35px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
+    box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
+    border-radius: 0;
+}
+
+.alert-info{
+    background: #fff292;
+    color: #000000;
+}
+
+    .alert-info > b{
+        color: #D90D15;
+    }
+
+.main-page-alert{
+    display: none;
+}
