@@ -125,3 +125,162 @@ a{
             display: inline-block;
             padding: 4px 6px;
         }
+
+        .well.header .first-nav-row{
+            height: 40px;
+        }
+
+            .well.header .first-nav-row .dropdown{
+                position: relative;
+                padding-top: 14px;
+            }
+
+                .well.header .first-nav-row .dropdown:hover .dropdown-menu{
+                   display: block;
+                }
+
+            .well.header .first-nav-row .dropdown-toggle{
+                text-decoration: underline;
+                line-height: 16px;
+            }
+
+                .well.header .first-nav-row .dropdown-toggle:hover{
+                    color: #D90D15;
+                    text-decoration: none;
+                }
+
+            .well.header .first-nav-row .dropdown-menu{
+                position: absolute;
+                top: 7px;
+                left: -7px;
+                padding: 2px 0;
+                min-width: 40px;
+                background: #f3f3f3;
+            }
+
+                .well.header .first-nav-row .dropdown-menu>li>a{
+                    padding: 2px 6px;
+                    color: #D90D15;
+                    text-decoration: underline;
+                }
+
+                    .well.header .first-nav-row .dropdown-menu>li>a:hover{
+                        background: transparent;
+                        text-decoration: none;
+                    }
+
+            .well.header .first-nav-row .nav-pills{
+                padding-top: 5px;
+            }
+
+                .well.header .first-nav-row .nav-pills > li > a{
+                    padding-left: 0;
+                    text-decoration: underline;
+                }
+
+                    .well.header .first-nav-row .nav-pills > li > a:hover {
+                        text-decoration: none;
+                        background: transparent;
+                        color: #D90D15;
+                    }
+
+        .well.header .nav-tabs{
+            background: ;
+        }
+
+.ic-flag{
+    display: block;
+    float: left;
+    width: 16px;
+    height: 11px;
+    margin: 2px 6px 0 0;
+    background: url(../images/icons/flags_matrix.png) 0 0 no-repeat;
+}
+.ic-flag-ru{
+    background-position: -288px -231px;
+}
+.ic-flag-ua{
+    background-position: -336px -11px;
+}
+.ic-flag-en{
+    background-position: -336px -121px;
+}
+
+.glyphicon-home,
+.glyphicon-envelope{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.glyphicon-home:before,
+.glyphicon-envelope:before{
+    content:" ";
+}
+
+.glyphicon-home{
+    background: url("../images/header/header_icon_home.gif") no-repeat left top;
+}
+.glyphicon-envelope{
+    background: url("../images/header/header_icon_contacts.gif") no-repeat left top;
+}
+
+.enter-form{
+    margin-top: 4px;
+    background: #999999;
+    padding: 0 5px!important;
+    border-top: 1px solid #e3e3e3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(101,101,101,0.91);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(101,101,101,0.91);
+    box-shadow: 0px 0px 0px 1px rgba(101,101,101,0.91);
+}
+
+    .enter-form .form-group{
+        padding-left: 2px;
+    }
+
+        .enter-form .form-group label{
+            color: #FFFFFF;
+        }
+
+        .enter-form .form-group .form-control{
+            border-radius: 0;
+            width: 80px;
+            padding: 0;
+            font-size: 13px;
+            line-height: 17px;
+            height: 17px;
+            text-indent: 2px;
+            box-shadow: none;
+        }
+
+    .enter-form .btn-primary{
+        margin: -4px 0 0 4px;
+    }
+
+    .enter-form .nav{
+        float: left;
+    }
+
+    .enter-form .nav>li>a{
+        padding: 0 0 2px 2px;
+        color: #FFFFFF;
+        font-size: 9px;
+    }
+
+        .enter-form .nav>li>a:hover{
+            background: none;
+            color: #FFE51F;
+        }
+
+    .enter-form .btn-info{
+        float: right;
+        margin-top: 2px;
+        background: #6a6a6a;
+        border-color: #6a6a6a;
+        color: #FFE51F;
+    }
