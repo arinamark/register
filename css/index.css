@@ -404,6 +404,27 @@ a:hover{
         width: 80%;
     }
 
+        .panel-default form .btn-rnd{
+            width: 15px;
+            height: 15px;
+            border: 0;
+            padding: 0;
+            background: url("../images/icons/ico_quest_sign.gif") no-repeat left top;
+            overflow: hidden;
+            text-indent: -1000px;
+            margin-left: -15px;
+            margin-top: 1px;
+            outline: none;
+        }
+
+            .panel-default form .btn-rnd + .tooltip > .tooltip-arrow{
+                border-right-color: #FFFFFF;
+            }
+            .panel-default form .btn-rnd + .tooltip > .tooltip-inner {
+                background-color: #FFFFFF;
+                color: #000000;
+            }
+
 .main-form-group{}
 
     .main-form-group .control-label:before{
@@ -537,3 +558,8 @@ a:hover{
         border-color: #6a6a6a;
         color: #FFE51F;
     }
+
+.no-padding{
+    padding-right: 0;
+    padding-left: 0;
+}
