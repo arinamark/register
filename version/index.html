@@ -76,20 +76,64 @@
                                     <a href="" class="btn btn-info">с SSL</a>
                                 </form>
                             </div>
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="">Лидеры</a></li>
-                                <li><a href="">Каталог</a></li>
-                                <li><a href="">Компании</a></li>
-                                <li><a href="">Форум</a></li>
-                                <li><a href="">Справка</a></li>
-                            </ul>
-                            <form class="form-inline search-form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control search-qery"
-                                           plaseholder="Поиск по тендерам"/>
-                                    <button type="submit" class="btn btn-primary">Найти</button>
+                            <div class="tabs-wrapper">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a href="#tender" aria-controls="tender" role="tab" data-toggle="tab">Тендеры</a>
+                                    </li>
+                                    <li>
+                                        <a href="#catalog" aria-controls="catalog" role="tab" data-toggle="tab">
+                                            Каталог
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#company" aria-controls="company" role="tab" data-toggle="tab">Компании
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#forum" aria-controls="forum" role="tab" data-toggle="tab">Форум</a>
+                                    </li>
+                                    <li><a href="">Справка</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="tender">
+                                        <form class="form-inline search-form">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control search-qery"
+                                                       placeholder="Поиск по тендерам"/>
+                                                <button type="submit" class="btn btn-primary">Найти</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="catalog">
+                                        <form class="form-inline search-form">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control search-qery"
+                                                       placeholder="Поиск по каталогу"/>
+                                                <button type="submit" class="btn btn-primary">Найти</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="company">
+                                        <form class="form-inline search-form">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control search-qery"
+                                                       placeholder="Поиск по компаниям"/>
+                                                <button type="submit" class="btn btn-primary">Найти</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="forum">
+                                        <form class="form-inline search-form">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control search-qery"
+                                                       placeholder="Поиск по форуму"/>
+                                                <button type="submit" class="btn btn-primary">Найти</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
 
                     </div>
