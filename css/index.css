@@ -2,7 +2,8 @@
     font: normal 12px Tahoma, Helvetica, sans-serif;
 }
 
-a{
+a,
+a:hover{
     color: #D90D15;
 }
 
@@ -65,13 +66,12 @@ a{
     -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NlODc2NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY2JSIgc3RvcC1jb2xvcj0iI2E1MzEwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg3JSIgc3RvcC1jb2xvcj0iI2NlODc2NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhODM0MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #ce8767 0%, #a53100 66%, #a83400 100%); /* FF3.6+ */
+    background: -moz-linear-gradient(top, #ce8767 0%, #a53100 66%, #a83400 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ce8767), color-stop(66%,#a53100), color-stop(100%,#a83400)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #ce8767 0%,#a53100 66%,#a83400 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #ce8767 0%,#a53100 66%,#a83400 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #ce8767 0%,#a53100 66%,#a83400 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #ce8767 0%,#a53100 66%,#a83400 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce8767', endColorstr='#a83400',GradientType=0 ); /* IE6-8 */
+    background: -webkit-linear-gradient(top, #ce8767 0%,#a53100 66%,#a83400 100%);
+    background: -o-linear-gradient(top, #ce8767 0%,#a53100 66%,#a83400 100%);
+    background: -ms-linear-gradient(top, #ce8767 0%,#a53100 66%,#a83400 100%);
+    background: linear-gradient(to bottom, #ce8767 0%,#a53100 66%,#a83400 100%);
 }
 .btn-primary:hover{
     border: 1px #a83400 solid;
@@ -194,7 +194,6 @@ a{
             background: -o-linear-gradient(top,  #ffeb5b 0%,#fdc73e 60%,#fdc673 100%);
             background: -ms-linear-gradient(top,  #ffeb5b 0%,#fdc73e 60%,#fdc673 100%);
             background: linear-gradient(to bottom,  #ffeb5b 0%,#fdc73e 60%,#fdc673 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeb5b', endColorstr='#fdc673',GradientType=0 );
 
             border: 1px solid #fdc673;
 
@@ -266,6 +265,52 @@ a{
             margin-bottom: 0;
         }
 
+    .well.footer{
+        background: url("../images/footer/footer_back.png") repeat-x left -1px;
+
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
+        box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
+
+        margin-left: 0;
+        margin-right: 0;
+
+        padding: 4px 0;
+        font-size: 10px;
+    }
+
+        .well.footer .copy-text{
+            background: url("../images/footer/footer_arrows.png") no-repeat left center;
+            padding-left: 50px;
+            margin-left: -10px;
+        }
+
+        .well.footer a,
+        .well.footer a:hover{
+            color: #A00006;
+        }
+
+        .well.footer .col-md-6.text-right{
+            padding-top: 9px;
+        }
+
+            .well.footer .col-md-6.text-right a{
+                line-height: 22px;
+                vertical-align: top;
+            }
+
+        .well.footer .browsers{
+            display: inline-block;
+            height: 22px;
+            width: 103px;
+            background: url(../images/icon_browsers.gif) no-repeat left top;
+            margin-right: -10px;
+        }
+
 .ic-flag{
     display: block;
     float: left;
@@ -291,9 +336,16 @@ a{
     display: inline-block;
     margin-right: 12px;
 }
+.glyphicon-lock{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
 
 .glyphicon-home:before,
-.glyphicon-envelope:before{
+.glyphicon-envelope:before,
+.glyphicon-lock:before{
     content:" ";
 }
 
@@ -302,6 +354,9 @@ a{
 }
 .glyphicon-envelope{
     background: url("../images/header/header_icon_contacts.gif") no-repeat left top;
+}
+.glyphicon-lock{
+    background: url("../images/footer/lock_01.gif") no-repeat left top;
 }
 
 .enter-form{
