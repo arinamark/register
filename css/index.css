@@ -92,6 +92,8 @@ a:hover{
     border-radius: 3px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
+
+    margin-bottom: 10px;
 }
 
     .well.header{
@@ -310,6 +312,35 @@ a:hover{
             background: url(../images/icon_browsers.gif) no-repeat left top;
             margin-right: -10px;
         }
+
+.breadcrumb{
+    border-left: 5px #cccccc solid;
+    background: url("../images/lined_bg.gif");
+    border-radius: 0;
+    color: #000000;
+    font-size: 10px;
+    padding: 4px;
+}
+
+    .breadcrumb a,
+    .breadcrumb a:hover{
+        color: #666666;
+        font-size: 10px;
+    }
+
+    .breadcrumb>li+li:before{
+        content:"/\00a0/\00a0";
+        letter-spacing: -2px;
+        color: #000000;
+        font-size: 10px;
+        padding: 0;
+        margin-right: 3px;
+    }
+
+    .breadcrumb > .active{
+        color: #000000;
+        font-size: 10px;
+    }
 
 .ic-flag{
     display: block;
