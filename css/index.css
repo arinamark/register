@@ -156,7 +156,7 @@ a:hover{
 
             .well.header .first-nav-row .dropdown{
                 position: relative;
-                padding-top: 14px;
+                padding-top: 10px;
             }
 
                 .well.header .first-nav-row .dropdown:hover .dropdown-menu{
@@ -175,7 +175,7 @@ a:hover{
 
             .well.header .first-nav-row .dropdown-menu{
                 position: absolute;
-                top: 7px;
+                top: 3px;
                 left: -7px;
                 padding: 2px 0;
                 min-width: 40px;
@@ -194,7 +194,7 @@ a:hover{
                     }
 
             .well.header .first-nav-row .nav-pills{
-                padding-top: 5px;
+                padding-top: 0;
             }
 
                 .well.header .first-nav-row .nav-pills > li > a{
@@ -269,6 +269,8 @@ a:hover{
             .well.header .tab-content form,
             .well.header .tab-content .form-group{
                 width: 100%;
+                padding: 0;
+                margin: 0;
             }
 
             .well.header .tab-content .form-control{
@@ -537,7 +539,7 @@ a:hover{
 }
 
 .enter-form{
-    margin-top: 4px;
+    margin: 4px 0 0 0;
     background: #999999;
     padding: 0 5px!important;
     border-top: 1px solid #e3e3e3;
@@ -550,11 +552,13 @@ a:hover{
 }
 
     .enter-form .form-group{
-        padding-left: 2px;
+        padding: 0 0 0 2px;
+        margin: 0;
     }
 
         .enter-form .form-group label{
             color: #FFFFFF;
+            font-weight: normal;
         }
 
         .enter-form .form-group .form-control{
