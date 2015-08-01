@@ -9,6 +9,7 @@ a:hover{
 
 .container-fluid{
     padding: 0 10px;
+    min-width: 991px!important;
 }
 
 .alert{
@@ -284,7 +285,7 @@ a:hover{
             }
 
             .well.header .tab-content .btn{
-                margin-top: -2px;
+                margin-top: -6px;
             }
 
         .well.header .navbar{
@@ -554,6 +555,7 @@ a:hover{
     .enter-form .form-group{
         padding: 0 0 0 2px;
         margin: 0;
+        display: inline-block;
     }
 
         .enter-form .form-group label{
@@ -570,6 +572,7 @@ a:hover{
             height: 17px;
             text-indent: 2px;
             box-shadow: none;
+            display: inline-block;
         }
 
     .enter-form .btn-primary{
@@ -617,4 +620,8 @@ a:hover{
 
 input[type=checkbox], input[type=radio] {
     margin-top: 1px;
+}
+
+.search-form .form-control{
+    display: inline-block;
 }
